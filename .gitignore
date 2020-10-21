@@ -1,2 +1,9 @@
 /venv/
 /.idea/
+*.pyc
+*.pot
+*.log
+__pycache__
+db.sqlite3
+media
+*.bak
