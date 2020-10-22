@@ -24,3 +24,12 @@ class Product(models.Model):
     available = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ('name',)
+        indexes = [
+            models.Index(fields=['id', 'slug']),
+        ]
+
+    def __str__(self):
+        return self.name
