@@ -14,7 +14,7 @@ def product_list(request, category_slug=None):  # if recieve category slug filte
                                                       'products': products})
 
 
-def product_detail(request, id, slug):
-    product = get_object_or_404(Product, id=id, slug=slug, available=True)
+def product_detail(request, product_id, slug):
+    product = get_object_or_404(Product, id=product_id, slug=slug, available=True)
     return render(request, 'shop/product/detail.hmtl', {'product': product})
 
