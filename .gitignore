@@ -9,3 +9,4 @@ media
 *.bak
 /products/
 /media/
+/NewShop/braintree_settings.py
